@@ -1,0 +1,10 @@
+{
+  "name": "react-native",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "bin": "bin/react-native.js",
+  "dependencies": {
+    "commander": "^5.1.0"
+  }
+}
