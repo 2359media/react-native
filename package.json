@@ -1,9 +1,12 @@
 {
-  "name": "react-native",
+  "name": "2359-react-native",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "bin": "bin/react-native.js",
+  "scripts": {
+    "setup": "./bin/init.sh App"
+  },
   "dependencies": {
     "commander": "^5.1.0"
   }

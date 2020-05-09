@@ -1,1 +1,9 @@
 node_modules
+/App
+/template/*
+!template/.huskyrc
+!template/.eslintrc.js
+!template/.lintstagedrc
+!template/server
+!template/src
+!template/App.js
