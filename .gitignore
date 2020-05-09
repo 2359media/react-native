@@ -4,4 +4,6 @@ node_modules
 !template/.huskyrc
 !template/.eslintrc.js
 !template/.lintstagedrc
+!template/server
 !template/src
+!template/App.js
