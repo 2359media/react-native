@@ -23,7 +23,6 @@ yarn add \
 axios \
 redux \
 react-redux \
-redux-saga \
 redux-persist \
 @react-native-community/async-storage \
 @react-navigation/native \
