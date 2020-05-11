@@ -32,11 +32,7 @@ react-native-screens \
 react-native-safe-area-context \
 @react-native-community/masked-view \
 @react-navigation/stack \
-@react-navigation/bottom-tabs \
-react-native-svg \
-@fortawesome/fontawesome-svg-core \
-@fortawesome/free-solid-svg-icons \
-@fortawesome/react-native-fontawesome
+@react-navigation/bottom-tabs
 
 # add dev modules
 yarn add --dev \

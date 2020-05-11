@@ -9,5 +9,10 @@
   },
   "dependencies": {
     "commander": "^5.1.0"
+  },
+  "devDependencies": {
+    "@react-native-community/eslint-config": "^0.0.5",
+    "@types/jest": "^25.2.1",
+    "eslint": "^6.5.1"
   }
 }
