@@ -1,4 +1,22 @@
 #!/bin/bash
+
+exitIfNotInstalled() {
+  local version=`echo $($1 --version)`
+  if [ -z "$version" ]; then
+    echo "Please make sure '$1' is installed in your machine."
+    exit 1
+  elif [[ $2 && $version != $2 ]]; then
+    echo ""
+    echo "Your '$1' version is '$version'. Required version is '$2'."
+    exit 2
+  fi
+}
+
+exitIfNotInstalled yarn
+exitIfNotInstalled git
+exitIfNotInstalled pod
+exitIfNotInstalled node v12.*
+
 SCRIPT_PATH=`echo "$0" | sed "s/\/bin\/init.sh$//g"`
 APP_NAME=$1
 # STABLE=$2
@@ -11,7 +29,7 @@ npx react-native init $APP_NAME
 # open repository
 cd $APP_NAME
 
-# # commit original files
+# commit original files
 if [ $IS_SETUP = 0 ]; then
   git init
   git add --all

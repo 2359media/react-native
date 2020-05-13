@@ -1,8 +1,8 @@
 const AccountApi = {
-  login: ({username, password}) => ({
+  login: (username, password) => ({
     url: '/login',
     method: 'post',
-    body: {username, password},
+    data: {username, password},
   }),
 
   logout: () => ({
