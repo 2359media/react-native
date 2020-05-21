@@ -2,6 +2,7 @@ import React from 'react';
 import {Text, TouchableOpacity, Image} from 'react-native';
 import styles from './styles';
 import Color from '../../constants/Color';
+import icons from '../../res/icons';
 
 const HIT_SLOP = {bottom: 8, top: 8, left: 8, right: 8};
 
@@ -23,7 +24,7 @@ const Button = ({
       onPress={() => onPress()}
       {...props}>
       {!!icon && (
-        <Image source={icon} style={styles[type + 'Icon'](tintColor)} />
+        <Image source={icons[icon]} style={styles[type + 'Icon'](tintColor)} />
       )}
       {!!text && (
         <Text style={styles[type + 'Text'](tintColor)} numberOfLines={1}>

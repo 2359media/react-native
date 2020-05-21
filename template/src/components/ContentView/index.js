@@ -10,21 +10,19 @@ const components = [
   [Animated.ScrollView, Animated.FlatList, Animated.SectionList],
 ];
 
-const ContentView = ({contentContainerStyle, animated = false, ...props}) => {
+const ContentView = ({style, animated = false, ...props}) => {
   const safeArea = useSafeArea();
   const animatedType = Number(animated);
   const componentType = props.renderItem ? (props.sections ? 2 : 1) : 0;
   const Component = components[animatedType][componentType];
+  const isScrollView = componentType === 0;
 
   return (
     <Component
-      contentContainerStyle={[
-        styles.container(safeArea, componentType === 0),
-        contentContainerStyle,
-      ]}
       keyboardShouldPersistTaps="handled"
       keyExtractor={keyExtractor}
       {...props}
+      contentContainerStyle={[styles.container(safeArea, isScrollView), style]}
     />
   );
 };

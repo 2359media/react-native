@@ -10,5 +10,8 @@ module.exports = {
   transformIgnorePatterns: [
     'node_modules/(?!((jest-)?react-native|react-navigation|@react-navigation/.*))',
   ],
+  globals: {
+    window: {},
+  },
   setupFiles: ['./src/utils/testUtils/mocks.js'],
 };

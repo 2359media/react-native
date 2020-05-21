@@ -1,23 +1,9 @@
-import React, {useRef, useEffect, useState, useCallback} from 'react';
+import React, {useRef, useEffect} from 'react';
 import {Animated, ActivityIndicator, Text} from 'react-native';
 import styles from './styles';
 
-const Loading = {
-  show: text => {},
-  hide: () => {},
-};
-
-const LoadingOverlay = () => {
-  const [{visible, text}, setLoading] = useState({visible: false});
+const LoadingView = ({visible, text}) => {
   const visibleA = useRef(new Animated.Value(0)).current;
-
-  Loading.show = useCallback(t => {
-    setLoading({visible: true, text: t});
-  }, []);
-
-  Loading.hide = useCallback(() => {
-    setLoading({visible: false});
-  }, []);
 
   useEffect(() => {
     Animated.timing(visibleA, {
@@ -39,6 +25,4 @@ const LoadingOverlay = () => {
   );
 };
 
-Loading.Overlay = LoadingOverlay;
-
-export default Loading;
+export default LoadingView;

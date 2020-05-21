@@ -1,10 +1,9 @@
 import {ReactElement} from 'react';
-import { ImageSourcePropType, ViewStyle } from 'react-native';
+import {TouchableOpacityProps} from 'react-native';
+import icons from '../../res/icons';
 
-interface ButtonProps {
-  icon?: ImageSourcePropType;
-  onPress?(): void;
-  style?: ViewStyle;
+interface ButtonProps extends TouchableOpacityProps {
+  icon?: keyof typeof icons;
   text?: string;
   tintColor?: string;
   type?: 'primary' | 'barItem';
