@@ -1,0 +1,98 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "backgroundColor": "white",
+        "flex": 1,
+      },
+      undefined,
+    ]
+  }
+>
+  <RCTScrollView
+    contentContainerStyle={
+      Array [
+        Object {
+          "flexGrow": 1,
+          "paddingBottom": 24,
+          "paddingLeft": 24,
+          "paddingRight": 24,
+          "paddingTop": 24,
+        },
+        Object {
+          "justifyContent": "center",
+        },
+      ]
+    }
+    keyExtractor={[Function]}
+    keyboardShouldPersistTaps="handled"
+  >
+    <View>
+      <Text
+        style={
+          Object {
+            "color": "black",
+            "fontSize": 48,
+            "fontWeight": "bold",
+            "marginBottom": 24,
+            "textAlign": "center",
+          }
+        }
+      >
+        Welcome to
+        
+
+        2359 React Native
+      </Text>
+      <View
+        accessible={true}
+        focusable={true}
+        hitSlop={
+          Object {
+            "bottom": 8,
+            "left": 8,
+            "right": 8,
+            "top": 8,
+          }
+        }
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#EC632B",
+            "borderRadius": 8,
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "opacity": 1,
+            "padding": 8,
+          }
+        }
+        testID="finishButton"
+      >
+        <Text
+          numberOfLines={1}
+          style={
+            Object {
+              "color": "white",
+              "fontSize": 16,
+              "fontWeight": "bold",
+              "margin": 4,
+            }
+          }
+        >
+          Goto login screen
+        </Text>
+      </View>
+    </View>
+  </RCTScrollView>
+</View>
+`;
