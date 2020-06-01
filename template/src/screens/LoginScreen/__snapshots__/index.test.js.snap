@@ -1,0 +1,239 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "backgroundColor": "white",
+        "flex": 1,
+      },
+      undefined,
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "white",
+          "elevation": 5,
+          "paddingLeft": 0,
+          "paddingRight": 0,
+          "paddingTop": 0,
+          "shadowColor": "black",
+          "shadowOpacity": 0.2,
+          "shadowRadius": 5,
+          "zIndex": 100,
+        },
+        undefined,
+      ]
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "height": 60,
+          "paddingHorizontal": 16,
+        }
+      }
+    >
+      <View
+        onLayout={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "minWidth": 50,
+          }
+        }
+      >
+        <View
+          accessible={true}
+          focusable={true}
+          hitSlop={
+            Object {
+              "bottom": 8,
+              "left": 8,
+              "right": 8,
+              "top": 8,
+            }
+          }
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "justifyContent": "center",
+              "opacity": 1,
+            }
+          }
+        >
+          <Image
+            source={1}
+            style={
+              Object {
+                "margin": 4,
+                "tintColor": "#EC632B",
+              }
+            }
+          />
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "alignSelf": "stretch",
+            "flex": 1,
+            "justifyContent": "center",
+            "paddingVertical": 8,
+          }
+        }
+      >
+        <Text
+          numberOfLines={1}
+          style={
+            Object {
+              "color": "black",
+              "fontSize": 20,
+              "fontWeight": "bold",
+              "left": 50,
+              "position": "absolute",
+              "right": 50,
+              "textAlign": "center",
+            }
+          }
+        >
+          Login
+        </Text>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "flex-end",
+            "minWidth": 50,
+          }
+        }
+      />
+    </View>
+  </View>
+  <RCTScrollView
+    contentContainerStyle={
+      Array [
+        Object {
+          "flexGrow": 1,
+          "paddingBottom": 24,
+          "paddingLeft": 24,
+          "paddingRight": 24,
+          "paddingTop": 24,
+        },
+        undefined,
+      ]
+    }
+    keyExtractor={[Function]}
+    keyboardShouldPersistTaps="handled"
+  >
+    <View>
+      <TextInput
+        allowFontScaling={true}
+        onChangeText={[Function]}
+        placeholder="username"
+        rejectResponderTermination={true}
+        style={
+          Object {
+            "borderColor": "#EEE",
+            "borderRadius": 8,
+            "borderWidth": 1,
+            "fontSize": 16,
+            "height": 48,
+            "marginBottom": 16,
+            "padding": 8,
+          }
+        }
+        testID="userInput"
+        textContentType="username"
+        underlineColorAndroid="transparent"
+        value="john"
+      />
+      <TextInput
+        allowFontScaling={true}
+        onChangeText={[Function]}
+        placeholder="password"
+        rejectResponderTermination={true}
+        secureTextEntry={true}
+        style={
+          Object {
+            "borderColor": "#EEE",
+            "borderRadius": 8,
+            "borderWidth": 1,
+            "fontSize": 16,
+            "height": 48,
+            "marginBottom": 16,
+            "padding": 8,
+          }
+        }
+        testID="passInput"
+        textContentType="password"
+        underlineColorAndroid="transparent"
+        value="1234"
+      />
+      <View
+        accessible={true}
+        focusable={true}
+        hitSlop={
+          Object {
+            "bottom": 8,
+            "left": 8,
+            "right": 8,
+            "top": 8,
+          }
+        }
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#EC632B",
+            "borderRadius": 8,
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "opacity": 1,
+            "padding": 8,
+          }
+        }
+        testID="loginButton"
+      >
+        <Text
+          numberOfLines={1}
+          style={
+            Object {
+              "color": "white",
+              "fontSize": 16,
+              "fontWeight": "bold",
+              "margin": 4,
+            }
+          }
+        >
+          Login
+        </Text>
+      </View>
+    </View>
+  </RCTScrollView>
+</View>
+`;
